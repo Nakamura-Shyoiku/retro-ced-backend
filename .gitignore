@@ -1,0 +1,19 @@
+# Local env should not be commited
+config/dev.yaml
+.idea/
+.DS_Store
+serverless/node_modules
+serverless/.serverless
+retro-ced-backend
+vendor/*
+cmd/ad_fetch/ad_fetch
+cmd/trr-impact-parser/*.txt
+cmd/trr-impact-parser/*.csv
+cmd/trr-impact-parser/*.jsonl
+*.txt
+*.csv
+*.html
+*.json
+build
+fixtures/
+.vscode/

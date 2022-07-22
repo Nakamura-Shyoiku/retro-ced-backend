@@ -1,0 +1,16 @@
+cron:
+- description: "daily scrape job"
+  url: /scraper/start
+  schedule: every 24 hours
+- description: "daily CJ sftp scrape job"
+  url: /scraper/sftp/start
+  schedule: every 24 hours
+- description: "daily DB cleanup job"
+  url: /prune
+  schedule: every 24 hours
+- description: "daily Impact (TheRealReal) scrape job"
+  url: /scraper/impact/start
+  schedule: every 24 hours
+- description: "daily Rakuten scrape job"
+  url: /scraper/whatgoesaround/start
+  schedule: every 24 hours

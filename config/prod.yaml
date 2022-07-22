@@ -1,0 +1,68 @@
+app:
+  port: 8080
+  domain: https://api.retroced.com
+  project: retro-ced
+  service: retroced-backend
+  jwt_secret: 0e87f7f533a8fcf97a7a5c2ca0584ff7a9b7c2434b1998b4cb4307d9546588e9475c5af4447d58a26607d48278670955cc8a3c825d77c312b5be8a9b096b18ff1bcc33e97fdd8c37f025c19107abfd18d20edd3faa498f7b59d8514707958b16c58195f4a2ff3d0bd02e79d2b1ad8220749062ab59cdecbb4cc96bac3b9cfdfba48db1e563e9ceaeca586bcaceb86fe2b0b702b1c9ae069c3b976b85f191d003fa16396c9bf562c110ab6390eb7e407324d25563575bf241e4d8ce50db07cbdcefccfa5450dd721577b0e055674d25c5336600302968bcfd8220bdfa0c2c5a4b10bf1921fdccb1eaf5279854cadf216d0f9db21f5ee7a60fc4629153cbe349b9
+  jwt_expire: 2592000
+  bcrypt_cost: 10
+
+  # whether password reset link points to beta.retroced.com or www.retroced.com
+  beta: true
+
+  # if set, stale products and urls are removed (more than six months since last seen)
+  removestale: true
+
+mysql:
+  host: 35.193.223.28
+  user: root
+  pass: romsIANIIyHugtGF
+  port: 3306
+  db: retroced
+
+auth:
+  redirect_domain: www.retroced.com
+  redirect_domain_mobile: mobile.retroced.com
+
+facebook:
+  app_id: 562445620777197
+  app_secret: ad051aa2e01c059b4cef49bc19a4fc5a
+
+mailgun:
+  key: pubkey-344c281818acdaaa01045018dde50047
+  secret: key-c3fcffe4b43e8d08944c32a6e4b9027a
+  domain: mg.retroced.com
+  sender: no-reply@retroced.com
+  admin: jeannette@retroced.com
+
+email_subjects:
+  password_reset: Password reset for Retroced
+  contact_us: Website contact-us form
+
+pubsub:
+  secret: 6dcce638ec0ae1a7c1d9bc18d17a5bb1a07f702cd911e75051c6e192d9dfb3bb2a87b5ffc786574860d30eb6aebb9f4147e8583ab84520577ef809d37cf1e9b27c1b7354d8595361a19fda0611dab70f55f1880187064180bcbb29c06c0d0287c2b6746887a3537907d1201baf4de779c4389407de4f9ab9ed7075c21fa501ce
+  scrape: scrape
+
+mailchimp:
+  key: 7226e200b4e84e3c126bed15ca34c44c-us12
+  newsletter: 21ad12ecf5
+  signups: 760e33523d
+
+# TODO: remove this completely soon
+algolia:
+  appId: UI0MD0OKIV
+  # make sure removal causes no issues - test run with no apiKey
+  # apiKey: 83fc77195ca98c0f2702529670383d1b
+  apiKey: not_a_real_api_key_lolz
+  indexName: Products
+
+medium:
+  key: 2028e9274a798cbe950f1bd26a34dfb6afbde03e3af1edc608b523d8144e2ae3c
+  userID: 1b33c94f5a5c9e30fecb118e5299d1d9d04128aa05cae3559b28d4fe2043dd6e7
+
+ftp:
+  rakuten:
+    host: aftp.linksynergy.com
+    user: RetroCed
+    pass: JaR#549!​
+    port: 21

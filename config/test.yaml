@@ -1,0 +1,27 @@
+app:
+  port: 8080
+  domain: http://localhost:8080
+  jwt_secret: secret
+  jwt_expire: 2592000
+  bcrypt_cost: 1
+
+mysql:
+  host: 192.168.99.100
+  user: root
+  pass: root
+  port: 3306
+  db: retroced
+
+facebook:
+  app_id: 562445620777197
+  app_secret: ad051aa2e01c059b4cef49bc19a4fc5a
+
+mailgun:
+  key: pubkey-344c281818acdaaa01045018dde50047
+  secret: key-c3fcffe4b43e8d08944c32a6e4b9027a
+  domain: mg.retroced.com
+  sender: no-reply@retroced.com
+
+email_subjects:
+  password_reset: Password reset for Retroced
+

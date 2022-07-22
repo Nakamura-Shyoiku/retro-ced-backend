@@ -1,0 +1,28 @@
+# created based on test.yaml
+app:
+  port: 8080
+  project: retro-ced
+  domain: http://localhost:8080
+  bcrypt_cost: 1
+  beta: true
+  jwt_expire: 2592000
+  removestale: true
+
+mysql:
+  host: db
+  user: root
+  pass: retroced
+  port: 3306
+  db: retroced
+
+pubsub:
+  scrape: scrape-test
+
+mailgun:
+  key: pubkey-344c281818acdaaa01045018dde50047
+  secret: key-c3fcffe4b43e8d08944c32a6e4b9027a
+  domain: mg.retroced.com
+  sender: no-reply@retroced.com
+
+email_subjects:
+  password_reset: password
